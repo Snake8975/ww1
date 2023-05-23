@@ -2,5 +2,5 @@ html {
   font-family: 'Roboto', sans-serif; /* this should be the rest of the output you got from Google fonts */
   font-size: 12px;
   background-color: red;
-  background-image: linear-gradient(#000000, #000000);
+  /*background-image: linear-gradient(#000000, #000000);*/
 }
