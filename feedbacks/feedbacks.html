@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,91 @@
     <link href="../../styles/styles.css" rel="stylesheet">
     <title>La Prima Guerra Mondiale - Lascia un feedback</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../main-battles/main-battles-index.html">Le battaglie principali</a></li>
+            <li><a href="../nations/nations.html">Le nazioni coinvolte</a></li>
+            <li><a href="../timeline/timeline.html">Timeline degli eventi</a></li>
+            <li><a href="../ww1-famous-people/famous-people-index.html">Personaggi famosi</a></li>
+            <li><a href="../ww1-in-culture/ww1-in-culture.html">La prima guerra mondiale nella cultura</a></li>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <div>
+                <label for="vnome">Nome: </label>
+                <input type="text" id="vnome" name="vname">
+                <label for="vcognome">Cognome: </label>
+                <input type="text" id="vcognome" name="vcognome">
+            </div>
+            <div>
+                <label for="veta">Fascia d'età: </label>
+                <select name="veta" id="veta">
+                    <option value="">Scegli una fascia di età</option>
+                    <option value="bambino">0-9: Bambino</option>
+                    <option value="adolescente">10-19: Adolescente</option>
+                    <option value="gadulto">20-35: Giovane adulto</option>
+                    <option value="adulto">36-65: Adulto</option>
+                    <option value="over65">65+: Senior</option>
+                </select>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Ti è piaciuto il sito? </legend>
+                    <input id="SiD1" name="D1" type="radio" value="Si">
+                    <label for="SiD1">Si </label>
+                    <input id="NoD1" name="D1" type="radio" value="No">
+                    <label for="NoD1">No </label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Lo consiglieresti a un/una conoscente? </legend>
+                    <input id="SiD2" name="D2" type="radio" value="Si">
+                    <label for="SiD2">Si </label>
+                    <input id="NoD2" name="D2" type="radio" value="No">
+                    <label for="NoD2">No </label>
+                </fieldset>
+            </div>
+            <div>
+                Che voto daresti al sito, da 1 a 10?
+                <input type="range" id="voto" name="voto" min="1" max="10" step="1">
+            </div>
+            <div>
+                <label for="qinfo">Come reputi le informazioni? </label>
+                <select name="qinfo" id="qinfo">
+                    <option value="">Dai un giudizio</option>
+                    <option value="insufficienti">Insufficienti</option>
+                    <option value="mediocri">Mediocri</option>
+                    <option value="sufficienti">Sufficienti</option>
+                    <option value="buone">Buone</option>
+                    <option value="ottime">Ottime</option>
+                    <option value="eccellenti">Eccellenti</option>
+                </select>
+            </div>
+            <div>
+                <p>Quali sono le tue aree di interesse?</p>
+                <input type="checkbox" id="storia" name="storia" value="storia">
+                <label for="storia"> Storia</label><br>
+                <input type="checkbox" id="arte" name="arte" value="arte">
+                <label for="arte"> Arte</label><br>
+                <input type="checkbox" id="geopolitica" name="geopolitica" value="geopolitica">
+                <label for="geopolitica"> Geopolitica</label><br>
+                <input type="checkbox" id="scienza" name="scienza" value="scienza">
+                <label for="scienza"> Scienza</label><br>
+                <input type="checkbox" id="altro" name="altro" value="altro">
+                <label for="altro"> Altro</label>
+            </div>
+            <div>
+                <label for="commenti">Lasciaci un tuo pensiero: </label><br>
+                <textarea id="commenti" name="commenti" rows="10" cols="75" placeholder="Inserisci qui il tuo pensiero..."></textarea>
+            </div>
+            <button name="button1">Invia dati</button>
+        </form>
+    </main>
 </body>
+
 </html>
